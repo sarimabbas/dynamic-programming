@@ -51,3 +51,9 @@ TC `O(2^N)`
 ![Call tree](./calltree.png)
 
 - The green path is the optimal one
+
+## Top down memoization
+
+In the example above, the `generate(capacity = 4, index = 3)` subtree is repeated twice, and the results can be stored in a memo to avoid work.
+
+The memo can be a Dict: `(capacity: int, index: int) => items: List[str]`.
