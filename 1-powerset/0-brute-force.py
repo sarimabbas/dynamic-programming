@@ -24,7 +24,7 @@ def generate(input_set: List, index=0):
 def generate_alt(input_set: List):
     # base case
     if not input_set:
-        return []
+        return [[]]
 
     # the recursive part
     down_the_tree = generate(input_set[1:])
