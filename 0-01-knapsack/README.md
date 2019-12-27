@@ -7,7 +7,7 @@
 - Their corresponding profits: `profits = [1, 6, 10, 16]`.
 - And a weight limit/capacity: `capacity = 7`.
 
-We want to find a combination of items which maximizes profit while being <= capacity.
+We want to find a combination of items which maximizes profit while being <= capacity. 0-1 because you can either use an item or not at all.
 
 ## Brute force 
 
