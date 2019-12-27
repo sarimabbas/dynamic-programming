@@ -2,10 +2,10 @@
 
 ## Problem
 
-We're given a bunch of items: `items = [A, B, C, D]`.
-Their corresponding weights: `weights = [1, 2, 3, 5]`.
-Their corresponding profits: `profits = [1, 6, 10, 16]`.
-And a weight limit/capacity: `capacity = 7`.
+- We're given a bunch of items: `items = [A, B, C, D]`.
+- Their corresponding weights: `weights = [1, 2, 3, 5]`.
+- Their corresponding profits: `profits = [1, 6, 10, 16]`.
+- And a weight limit/capacity: `capacity = 7`.
 
 We want to find a combination of items which maximizes profit while being <= capacity.
 
