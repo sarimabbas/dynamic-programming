@@ -38,8 +38,8 @@ TC `O(2^N)`, where `N` is the number of items.
 
 ### Similar Algo 2
 
-1. Let `with_set` be the knapsack with the current item (`i == 0` to start) `item[i]` if within capacity + the optimal knapsack recursively constructed from all other items `items[i:]` and the remaining capacity `capacity - weights[i]`
-2. Let `without_set` be the knapsack without the current item (`i == 0` to start) + the optimal knapsack recursively constructed from all other items `items[i:]` and the remaining unchanged capacity `capacity`
+1. Let `with_set` be the knapsack with the current item (`i == 0` to start) `item[i]` if within capacity + the optimal knapsack recursively constructed from all other items `items[i + 1:]` and the remaining capacity `capacity - weights[i]`
+2. Let `without_set` be the knapsack without the current item (`i == 0` to start) + the optimal knapsack recursively constructed from all other items `items[i + 1:]` and the remaining unchanged capacity `capacity`
 3. Return the one that maximises profit
 
 <!-- TODO: why is powerset and this recursive approach similar -->
