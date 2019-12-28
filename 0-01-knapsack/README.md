@@ -34,7 +34,7 @@ This happens to be the powerset of `[A, B, C]`. For each combination, we check i
 2. Filter `ps` such that it only contains subsets <= capacity
 3. Return the subset which has the highest profit
 
-TC `O(2^N)`
+TC `O(2^N)`, where `N` is the number of items.
 
 ### Similar Algo 2
 
@@ -44,7 +44,7 @@ TC `O(2^N)`
 
 <!-- TODO: why is powerset and this recursive approach similar -->
 
-TC `O(2^N)`
+TC `O(2^N)`, where `N` is the number of items.
 
 ### Recursion call tree
 
@@ -76,3 +76,8 @@ TC `O(2^N)`
 In the example above, the `generate(capacity = 4, index = 3)` subtree is repeated twice, and the results can be stored in a memo to avoid work.
 
 The memo can be a Dict: `(capacity: int, index: int) => items: List[str]`.
+
+TC:
+
+- There are `C * N` subproblems, so the TC is `O(C * N)`, where `C` is the capacity and `N` is the number of items.
+- At worst, there is no overlap between subproblems for given parameters, so `C * N <= 2 ^ N`, for some parameter combinations.
